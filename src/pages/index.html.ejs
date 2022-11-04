@@ -1,0 +1,20 @@
+<!--
+  Necessary components for this page
+-->
+<%
+    const pageComponents = [
+      'form'
+    ];
+%>
+
+<!-- head section and header menu of the page -->
+<%- include('common/_head.html.ejs', { pageComponents: pageComponents }); -%>
+
+<!-- Form -->
+<%- include('../components/form/form.html.ejs'); -%>
+
+<!---------------------------------------------
+  footer section of the page
+-->
+
+<%- include('common/_foot.html.ejs', {pageComponents: pageComponents}); -%>

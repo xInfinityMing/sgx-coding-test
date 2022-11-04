@@ -1,0 +1,27 @@
+
+    </main>
+    <!-- main content end -->
+
+    <!-- footer component -->
+    <%- include('../../components/footer/footer.html.ejs'); -%>
+
+    <script src="./assets/js/index.js"></script>
+
+    <!-- components list must be same as head ejs -->
+    <%
+      const components = [
+        'header',
+        'footer'
+      ];
+      if (typeof pageComponents !== 'undefined') {
+        pageComponents.forEach(component => {
+          components.push(component);
+        });
+      }
+    %>
+    <% [...new Set(components)].forEach(component => { %>
+    <script src="components/<%= component %>/<%= component %>.js"></script>
+    <% }) %>
+  </body>
+
+</html>

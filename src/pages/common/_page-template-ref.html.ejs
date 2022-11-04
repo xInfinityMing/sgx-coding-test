@@ -1,0 +1,18 @@
+<!--
+  Necessary components for this page
+  add in the following array
+-->
+<%
+  const pageComponents = [];
+%>
+
+<!-- head section and header menu of the page -->
+<%- include('common/_head.html.ejs', {pageComponents: pageComponents}); -%>
+<!---------------------------------------------->
+
+-- To place page's components here --
+
+<!---------------------------------------------
+    footer and other foot section of the page
+-->
+<%- include('common/_foot.html.ejs', {pageComponents: pageComponents}); -%>

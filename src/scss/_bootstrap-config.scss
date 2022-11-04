@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+// Bootstrap Configuration
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Breakpoints override
+$grid-breakpoints: (
+  xs: 0, // bs default
+  sm: 576px, // bs default | small
+  md: $breakpoint-md, // medium
+  lg: $breakpoint-lg, // large
+  xl: $breakpoint-xl, // extra large
+);
+
+// Container width override
+$container-max-widths: (
+  sm: 540px, // bs default
+  md: 720px, // bs default
+  lg: 960px, // bs default
+  xl: 1280px
+);
+
+// Container margin override
+// in layout.scss

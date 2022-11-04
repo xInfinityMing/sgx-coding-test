@@ -1,0 +1,15 @@
+//Fonts
+//@import "fonts";
+
+//Variables
+@import "variables";
+
+//Import bootstrap
+// only base and common styles are in this file
+// check more details for available components in this file
+@import "bootstrap";
+
+//Utilities
+@import "utilities";
+
+// Don't write styles directly in this main file

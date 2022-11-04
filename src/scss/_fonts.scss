@@ -1,0 +1,21 @@
+/* Muli - Light */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/Muli-Regular.woff2') format('woff2'),
+       url('../fonts/Muli-Regular.woff') format('woff');
+}
+
+/* Muli - Regular */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+    url('../fonts/Muli-Regular.woff2') format('woff2'),
+    url('../fonts/Muli-Regular.woff') format('woff');
+}

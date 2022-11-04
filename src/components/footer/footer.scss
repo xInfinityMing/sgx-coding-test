@@ -1,0 +1,20 @@
+@import "../../scss/variables";
+@import "../../scss/bootstrap-config";
+
+footer {
+    overflow: hidden;
+    width: 100%;
+    z-index: 5;
+    margin-top: auto;
+    background: $gray-1;
+
+    .footer {
+        &-main-content {
+            color: $black;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            font-weight: $font-weight-600;
+        }
+    }
+}

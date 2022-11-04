@@ -1,0 +1,34 @@
+@use 'sass:math';
+
+@import "../../scss/variables";
+@import "../../scss/bootstrap-config";
+
+@import "../../../node_modules/bootstrap/scss/navbar";
+
+// fixed top position from helpers
+@import "../../../node_modules/bootstrap/scss/helpers";
+
+header {
+    &.navbar {
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        background: $ternary-color;
+        padding: 1rem 2rem;
+        transition: $transition-075;
+        font-size: $font-size-20;
+        font-weight: $font-weight-600;
+    }
+}
+
+// Desktop
+@include media-breakpoint-up(lg) {
+    
+}
+
+// Mobile
+@include media-breakpoint-down(lg) {
+    
+}

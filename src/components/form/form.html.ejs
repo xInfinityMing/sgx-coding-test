@@ -1,0 +1,42 @@
+<form class="form container-xl" id="form" novalidate>
+    <div class="form-content">
+        <h1>Simple Form</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+            </div>
+            <div class="col-lg-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="col-12">
+                <label for="description" class="form-label">Description</label>
+                <textarea type="text" class="form-control" id="description" placeholder="Description"></textarea>
+            </div>
+            <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="col-12 justify-content-end d-flex align-items-center">
+                <div class="add-image">
+                    <label for="file">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <defs />
+                            <path d="M26 0h12v64H26z" />
+                            <path d="M0 38V26h64v12z" />
+                        </svg>
+                        <span>ADD IMAGE</span>
+                    </label>
+                    
+                    <input type="file" id="file" accept="image/png, image/gif, image/jpeg">
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+            <div class="col-12">
+                <!-- Image Container -->
+                <div class="add-image-container"></div>
+            </div>
+        </div>
+    </div>
+</form>

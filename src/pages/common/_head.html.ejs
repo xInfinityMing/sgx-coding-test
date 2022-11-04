@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta name="theme-color" content="#000000">
+
+    <meta name="description" content="SPH">
+
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+
+    <link rel="manifest" href="./manifest.json" />
+
+    <title>SGX Coding Test</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700&family=Poppins:wght@500;600;800&display=swap');
+    </style>
+
+    <link href="./assets/css/main.css" rel="stylesheet">
+
+    <!-- components list must be same as foot ejs -->
+    <%
+      const components = [
+        'header',
+        'footer'
+      ];
+      if (typeof pageComponents !== 'undefined') {
+        pageComponents.forEach(component => {
+          components.push(component);
+        });
+      }
+    %>
+    <% [...new Set(components)].forEach(component => { %>
+    <link href="./components/<%= component %>/<%= component %>.css" rel="stylesheet">
+    <% }) %>
+
+  </head>
+
+  <body>
+
+    <!-- header component -->
+    <%- include('../../components/header/header.html.ejs'); -%>
+
+    <!-- main content start -->
+    <main>
