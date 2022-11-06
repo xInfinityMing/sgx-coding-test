@@ -1,5 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
 import { terser } from 'rollup-plugin-terser';
 import copy from 'rollup-plugin-copy';
 import clear from 'rollup-plugin-clear';
@@ -98,6 +99,7 @@ components.forEach(component => {
 		plugins: [
 			resolve(),
 			commonjs(),
+			json(),
 			production && terser(),
 			!production && livereload(),
 			scss({

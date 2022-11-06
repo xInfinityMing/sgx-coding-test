@@ -4,19 +4,19 @@
         <div class="row">
             <div class="col-lg-6">
                 <label for="firstName" class="form-label">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">
             </div>
             <div class="col-lg-6">
                 <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
             </div>
             <div class="col-12">
                 <label for="description" class="form-label">Description</label>
-                <textarea type="text" class="form-control" id="description" placeholder="Description"></textarea>
+                <textarea type="text" class="form-control" name="description" id="description" placeholder="Description"></textarea>
             </div>
             <div class="col-12">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Email">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
             </div>
             <div class="col-12 justify-content-end d-flex align-items-center">
                 <div class="add-image">
@@ -31,7 +31,7 @@
                     
                     <input type="file" id="file" accept="image/png, image/gif, image/jpeg">
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" name="submit-btn" disabled>Submit</button>
             </div>
             <div class="col-12">
                 <!-- Image Container -->
