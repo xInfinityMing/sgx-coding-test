@@ -6,6 +6,7 @@ const validationTextarea = document.querySelectorAll("form textarea");
 let validationMsg = "";
 let validatedInput = false, validatedTextarea  = false;
 
+// Image on change and append images
 document.getElementById('file').onchange = function () {
     var src = URL.createObjectURL(this.files[0]);
     let imageContainer = document.querySelector(".add-image-container");
@@ -26,10 +27,12 @@ document.getElementById('file').onchange = function () {
     }
   };
 
+// Form Submit
 document.getElementById('form').addEventListener("submit", (e) => {
   e.preventDefault();
 
-  validationInput.forEach((input) => {
+    // Validation Check Input
+    validationInput.forEach((input) => {
       let error = document.createElement("span");
       error.classList.add("error");
 
@@ -69,7 +72,8 @@ document.getElementById('form').addEventListener("submit", (e) => {
       }
   });
 
-  validationTextarea.forEach((textarea) => {
+    // Validation Check Textarea
+    validationTextarea.forEach((textarea) => {
       let error = document.createElement("span");
       error.classList.add("error");
       
@@ -92,6 +96,7 @@ document.getElementById('form').addEventListener("submit", (e) => {
   }
 });
 
+// Validation Check Input
 document.querySelectorAll(".form input").forEach((input) => {
   input.addEventListener("change", () => {
     if(input.parentNode.querySelector(".error")) {
@@ -157,6 +162,7 @@ document.querySelectorAll(".form input").forEach((input) => {
   })
 });
 
+// Validation Check Textarea
 document.querySelectorAll(".form textarea").forEach((textarea) => {
   textarea.addEventListener("change", () => {
     if(textarea.parentNode.querySelector(".error")) {
